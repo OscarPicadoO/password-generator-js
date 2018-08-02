@@ -22,57 +22,50 @@
         </div>
         <form action="" class="app" id="app">
 
-            <div class="row numero-caracter">
+            <div class="row numero-caracteres">
                 <div class="col">
                     <label for="length"> Número de caracteres:</label>
                 </div>
-                <div class="col">
+                <div class="col botones">
                     <div>
                         <button class="btn" id="btn-menos-uno">
                         <i class="fas fa-minus"></i>
                     </button>
                     </div>
-                </div>
-                <div>
-                    <input type="text" id="longitud" readonly value="12">
-                </div>
-                <div>
-                    <button class="btn" id="btn-mas-uno">
+                    <div>
+                        <input type="text" id="longitud" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno">
                         <i class="fas fa-plus"></i>
                     </button>
+                    </div>
+
                 </div>
             </div>
-
-
-
             <!-- fin row-->
-
-
-            <div class="row-simbols">
+            <div class="row simbols">
                 <div class="col">
                     <label for="simbols"> Incluir Simbolos</label>
                 </div>
                 <div class="col">
                     <button class="btn" id="btn-simbols">
-                    <i class="fas fa-check"></i>
-                </button>
+                        <i class="fas fa-check"></i>
+                    </button>
                 </div>
             </div>
-
-            <div class="row-number">
+            <div class="row number">
 
                 <div class="col">
                     <label for="numbers"> Incluir Numeros</label>
                 </div>
                 <div class="col">
                     <button class="btn" id="btn-numbers">
-                    <i class="fas fa-check"></i>
-                </button>
+                        <i class="fas fa-check"></i>
+                    </button>
                 </div>
             </div>
-
-
-            <div class="row-capital">
+            <div class="row capital">
                 <div class="col">
                     <label for="capital-letter"> Incluir Mayusculas</label>
                 </div>
@@ -80,27 +73,31 @@
 
                 <div class="col">
                     <button class="btn" id="btn-capital-letter">
-                    <i class="fas fa-check"></i>
-                </button>
+                        <i class="fas fa-check"></i>
+                    </button>
                 </div>
             </div>
-
-            <div class="password">
+            <div class="row password">
 
                 <div class="col">
-                    <button class="btn btn-generar" id="btn-generar"> Generar Contraseña <i class="fa fa-lock"></i></button>
+                    <button class="btn btn-generar" id="btn-generar"> Generar<i class="fas fa-lock"></i></button>
                 </div>
                 <div class="col">
 
                     <input type="text" class="input-password" id="input-password" readonly value="Contraseña">
                 </div>
-                <div class="col">
-                    <div class="alert-copiado" id="alert-capy">
-                        <p><i class="fas fa-copy"> Texto copiado.</i></p>
-                    </div>
+
+            </div>
+            <div class="row mensaje">
+                <div class="col"></div>
+                <div class="alerta-copiado active" id="alerta-copiado">
+                    <p>
+                        <i class="fas fa-copy"> Texto copiado.</i>
+                    </p>
                 </div>
             </div>
-        </form>
+    </div>
+    </form>
     </div>
     <!-- fin container-->
     <script src="js/app.js">

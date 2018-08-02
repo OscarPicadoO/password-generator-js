@@ -1,0 +1,198 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    
+    *::selection {
+        background: #3325e7;
+        color: #ffffff;
+    }
+    
+    *::-moz-selection {
+        background: #3325e7;
+        color: #ffffff;
+    }
+    
+    body {
+        background: #212139;
+        color: #ffffff;
+    }
+    
+    .container {
+        max-width: 500px;
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+    .logo {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .logo img {
+        width: 100%;
+        vertical-align: top;
+    }
+    
+    .app .row {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .app .col {
+        width: 50%;
+    }
+    
+    .app label {
+        line-height: 40px;
+    }
+    
+    .app .input {
+        text-align: center;
+        border: none;
+    }
+    
+    .app .btn {
+        width: 100%;
+        background: #684ffb;
+        color: #ffffff;
+        display: inline-block;
+        height: 40px;
+        vertical-align: top;
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    
+    .app .btn:hover {
+        background: #b4a5ff;
+    }
+    
+    .app .btn .false {
+        background: #33257e;
+    }
+    
+    .app .numero-caracteres .botones div {
+        width: 100%;
+    }
+    
+    .app .numero-caracteres .botones div:nth-child(1) {
+        border-radius: 4px 0 0 4px;
+    }
+    
+    .app .numero-caracteres input {
+        height: 40px;
+        width: 100%;
+        cursor: default;
+        background: #33257e;
+        color: #fff;
+    }
+    
+    .app .numero-caracteres .botones div:nth-child(3) {
+        border-radius: 0 4px 4px 0;
+    }
+    
+    .app .numero-caracteres .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .app .row.password {
+        margin-bottom: 10px;
+    }
+    
+    .app .row.password .col:nth-child(1) {
+        width: 30%;
+    }
+    
+    .app .row.password .col:nth-child(2) {
+        width: 65%;
+    }
+    
+    .app .row.password .btn.btn-generar {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        padding: 0;
+        line-height: 40px;
+        position: relative;
+    }
+    
+    .app .row.password .btn.btn-generar i {
+        margin-left: 20px;
+        position: relative;
+        top: -1px;
+        font-size: 14px;
+    }
+    
+    .app .row.password .btn.btn-generar:after {
+        content: " ";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: #684ffb;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 13px;
+        right: -7px;
+        transition: all .3s ease;
+    }
+    
+    .app .row.password .col:nth-child(1):hover .btn.btn-generar:after {
+        background: #b4a5ff
+    }
+    
+    .app .row.password .input-password {
+        width: 100%;
+        background: none;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, .25);
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    
+    .app .row.password .input-password:hover {
+        border: 1px solid rgba(255, 255, 255, .50);
+    }
+    
+    .app .row.password input:moz-selection {
+        background: #212139
+    }
+    
+    .app .row.mensaje {
+        justify-content: flex-end;
+    }
+    
+    .app .row.mensaje .alerta-copiado {
+        width: 65%;
+    }
+    
+    .app .row.mensaje .alerta-copiado {
+        text-align: center;
+        color: rgba(255, 255, 255, 0);
+        transition: .3s ease;
+    }
+    
+    .app .row.mensaje .alerta-copiado.active {
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .app .row.mensaje .alerta-copiado.active p {
+        font-size: 12px;
+    }
+    
+    .app .row.mensaje .alerta-copiado.active i {
+        font-size: 12px;
+    }
