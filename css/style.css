@@ -30,6 +30,7 @@
     .logo {
         margin-bottom: 40px;
         width: 100%;
+        text-align: center;
     }
     
     .logo img {
@@ -135,14 +136,14 @@
     }
     
     .app .row.password .btn.btn-generar:after {
-        content: " ";
+        content: "";
         display: inline-block;
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
         background: #684ffb;
         transform: rotate(45deg);
         position: absolute;
-        top: 13px;
+        top: 14px;
         right: -7px;
         transition: all .3s ease;
     }
@@ -195,4 +196,37 @@
     
     .app .row.mensaje .alerta-copiado.active i {
         font-size: 12px;
+    }
+    /**
+
+    RESPONSIVE DESIGN
+
+    **/
+    
+    @media screen and (max-width: 500px) {
+        .logo img {
+            width: 70%;
+        }
+        .app .row {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .app .row .col {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .app .row.password {
+            border-top: 3px solid rgba(255, 255, 255, .25);
+            padding-top: 40px;
+        }
+        .app .row.password .col:nth-child(1),
+        .app .row.password .col:nth-child(2) {
+            width: 100%;
+        }
+        .app .row.password .btn.btn-generar:after {
+            top: auto;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+        }
     }
