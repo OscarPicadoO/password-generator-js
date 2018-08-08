@@ -13,7 +13,7 @@
     var caracteres = {
 
         numbers: '0 1 2 3 4 5 6 7 8 9',
-        simbols: '! @ # $ % ^ & * ( ) - _ = + / * < > ? , . ¿ | \ { } [ ]',
+        simbols: '! @ # $ % ^ & * ( ) - _ = + / * < > ? , . ¿ | { } [ ]',
         capital_letter: 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z',
         lowercase_letter: 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
     }
@@ -91,7 +91,27 @@
 
 
 
+    app.elements.namedItem('btn-generar').addEventListener('click', function() {
+        /*alert('Contraseña generada');
+         */
+        generarPassword();
 
+    });
+
+
+    function generarPassword() {
+        var caracteresUtilizados = '';
+        var password = '';
+
+        for (propiedad in configuracion) {
+            console.log('Ciclo');
+            if (configuracion[propiedad] == true) {
+                caracteresUtilizados += caracteres[propiedad] + '   ';
+
+            }
+        }
+        console.log('Cadena seleccionada :' + caracteresUtilizados);
+    }
 }())
 
 /*
