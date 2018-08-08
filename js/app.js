@@ -18,12 +18,12 @@
         lowercase_letter: 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
     }
 
-    /*
+
     console.log(configuracion.caracteres);
     configuracion.caracteres = configuracion.caracteres + 1;
     console.log(configuracion.caracteres);
 
-    
+
 
 
     /*
@@ -63,4 +63,41 @@
     FUNCIONES
     */
 
+    function btnToggle(elements) {
+        elements.classList.toggle('false');
+        elements.childNodes[1].classList.toggle('fa-check');
+        elements.childNodes[1].classList.toggle('fa-times');
+    }
+
+    app.elements.namedItem('btn-simbols').addEventListener('click', function() {
+        btnToggle(this);
+        configuracion.simbols = !configuracion.simbols;
+        console.log('Estado simbolos = ' + configuracion.simbols);
+
+    });
+
+    app.elements.namedItem('btn-numbers').addEventListener('click', function() {
+        btnToggle(this);
+        configuracion.numbers = !configuracion.numbers;
+        console.log('Estado numeros = ' + configuracion.numbers);
+    });
+
+    app.elements.namedItem('btn-capital-letter').addEventListener('click', function() {
+        btnToggle(this);
+        configuracion.capital_letter = !configuracion.capital_letter;
+        console.log('Estado mayusculas = ' + configuracion.capital_letter);
+    });
+
+
+
+
+
 }())
+
+/*
+
+app.elements.namedItem('btn-simbols').addEventListener('click', function () {
+    this.classList.toggle('false');
+    this.childNodes[1].classList.toggle('fa-check');
+    this.childNodes[1].classList.toggle('fa-times');
+});*/
